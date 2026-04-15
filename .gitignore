@@ -1,0 +1,67 @@
+# --- Build Artifacts and Generated Files ---
+# These are the products of the build script and should not be tracked.
+# The `output` directory is where all final images are stored.
+output/
+
+# Raw and compressed disk images
+*.img
+*.img.gz
+*.iso
+*.wic
+*.vdi
+*.vmdk
+
+# Filesystem tarballs
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.zip
+
+
+# --- Build System Directories ---
+# These directories are generated during the build process.
+
+# The root filesystem created by debootstrap
+rootfs/
+
+# Yocto/Poky specific directories (good to have just in case)
+build/
+tmp/
+sstate-cache/
+downloads/
+
+
+# --- Temporary Mount Points ---
+# These directories are created by the script to mount partitions.
+boot/
+root/
+mnt/
+
+
+# --- Log Files ---
+# Any logs generated during the build or script execution.
+*.log
+log/
+
+
+# --- System and Editor Caches ---
+# Common files from macOS, Windows, and various text editors.
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+
+# --- Local Configuration & Secrets ---
+# Never commit sensitive information.
+# A .env file is a common way to store local secrets.
+.env
+*.key
+*.pem
+id_rsa
+id_rsa.pub
+credentials.txt
