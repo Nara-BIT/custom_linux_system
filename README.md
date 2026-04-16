@@ -4,6 +4,7 @@ This repository contains the scripts and configuration to build a minimal, custo
 
 The entire system is built using `debootstrap` to assemble pre-compiled Ubuntu packages. This approach is significantly faster and more space-efficient than full source-based systems like Yocto, making it ideal for rapid prototyping and development on machines with limited disk space.
 
+
 ## Project Philosophy
 
 -   **Reproducible:** The build process is fully scripted to ensure anyone can create an identical image.
